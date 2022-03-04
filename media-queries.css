@@ -3,9 +3,6 @@
     .wrapper  {
         width: 750px;
     }
-    .forma  {
-        width: 410px;
-    }
 }
 
 /* Small Devices, Tablets */
@@ -13,17 +10,11 @@
     .wrapper  {
         width: 450px;
     }
-    .forma  {
-        width: 310px;
-    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
     .wrapper  {
         width: 320px;
-    }
-    .forma  {
-        width: 210px;
     }
 }
