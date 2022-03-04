@@ -1,3 +1,9 @@
+body {
+    background:url("https://ilyakhasanov.ru/images/background/75.png");
+}
+.tab {
+    overflow: hidden;
+}
 .wrapper {
       height: 900px;
       width: 1200px;
