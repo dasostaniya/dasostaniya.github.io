@@ -1,9 +1,4 @@
-<?php 
-    if (!empty($_COOKIE['sid'])) {session_id($_COOKIE['sid']);}
-    session_start();
-    require_once 'classes/Auth.class.php';
-    require_once 'stayt.php';
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>1ndryxa</title>
@@ -24,8 +19,6 @@ if($_FILES)
     }
 }
 ?>
-    <!-- Для авторизованных -->
-     <?php if (Auth\User::isAuthorized()): ?>
     <div align="center">
     <form style="width: 50%; height: 80%; filter: blur(0px);" method="post" enctype="multipart/form-data">
     <div align="center">
@@ -56,14 +49,5 @@ if($_FILES)
 ?>
 </form>
 </div>
-<button class="goGS" style="position: absolute; left: 42%; top: 80%;" onclick="window.location.href='http://127.0.0.1/raochaya/1ndryxa.html'">Вернуться на Главную Страницу</button>
-
-     <!-- Для НЕ авторизованных -->
-     <?php else: ?>
-     <h1 align="center" style="color: white;">Войдите в аккаунт</h1>
-     <button class="goGS" style="position: absolute; left: 42%; top: 80%;" onclick="window.location.href='http://127.0.0.1/raochaya/1ndryxa.html'">Вернуться на Главную Страницу</button>
-
-     <!-- Конец условия -->
-     <?php endif; ?>
 </body>
 </html>
