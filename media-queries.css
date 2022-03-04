@@ -1,0 +1,29 @@
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .wrapper  {
+        width: 750px;
+    }
+    .forma  {
+        width: 410px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .wrapper  {
+        width: 450px;
+    }
+    .forma  {
+        width: 310px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .wrapper  {
+        width: 320px;
+    }
+    .forma  {
+        width: 210px;
+    }
+}
